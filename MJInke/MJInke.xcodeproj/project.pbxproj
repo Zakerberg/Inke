@@ -12,6 +12,8 @@
 		45009B661F2D96F300C889E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45009B641F2D96F300C889E9 /* Main.storyboard */; };
 		45009B681F2D96F300C889E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45009B671F2D96F300C889E9 /* Assets.xcassets */; };
 		45009B6B1F2D96F300C889E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45009B691F2D96F300C889E9 /* LaunchScreen.storyboard */; };
+		45EE42EB1F30B265005C1A9D /* MJCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE42EA1F30B265005C1A9D /* MJCell.swift */; };
+		45EE42EE1F30B491005C1A9D /* MJLivesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE42ED1F30B491005C1A9D /* MJLivesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		45025A121F305A0900515700 /* Live.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Live.swift; sourceTree = "<group>"; };
 		45025A131F305A0900515700 /* Creator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creator.swift; sourceTree = "<group>"; };
 		45025A141F305A0900515700 /* Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extra.swift; sourceTree = "<group>"; };
+		45EE42EA1F30B265005C1A9D /* MJCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJCell.swift; sourceTree = "<group>"; };
+		45EE42ED1F30B491005C1A9D /* MJLivesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJLivesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		45009B5F1F2D96F300C889E9 /* MJInke */ = {
 			isa = PBXGroup;
 			children = (
+				45EE42EC1F30B472005C1A9D /* Controller */,
 				45025A0E1F3058F100515700 /* Model */,
 				45009B601F2D96F300C889E9 /* AppDelegate.swift */,
 				45009B621F2D96F300C889E9 /* ViewController.swift */,
@@ -80,8 +85,17 @@
 				45025A111F305A0900515700 /* Label.swift */,
 				45025A121F305A0900515700 /* Live.swift */,
 				45025A101F305A0900515700 /* RootClass.swift */,
+				45EE42EA1F30B265005C1A9D /* MJCell.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		45EE42EC1F30B472005C1A9D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				45EE42ED1F30B491005C1A9D /* MJLivesController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45EE42EE1F30B491005C1A9D /* MJLivesController.swift in Sources */,
 				45009B631F2D96F300C889E9 /* ViewController.swift in Sources */,
 				45009B611F2D96F300C889E9 /* AppDelegate.swift in Sources */,
+				45EE42EB1F30B265005C1A9D /* MJCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
