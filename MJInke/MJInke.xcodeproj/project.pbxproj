@@ -22,6 +22,12 @@
 		45009B671F2D96F300C889E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45009B6A1F2D96F300C889E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45009B6C1F2D96F300C889E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45025A0F1F305A0900515700 /* ActInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActInfo.swift; sourceTree = "<group>"; };
+		45025A101F305A0900515700 /* RootClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootClass.swift; sourceTree = "<group>"; };
+		45025A111F305A0900515700 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		45025A121F305A0900515700 /* Live.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Live.swift; sourceTree = "<group>"; };
+		45025A131F305A0900515700 /* Creator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creator.swift; sourceTree = "<group>"; };
+		45025A141F305A0900515700 /* Extra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extra.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 		45009B5F1F2D96F300C889E9 /* MJInke */ = {
 			isa = PBXGroup;
 			children = (
+				45025A0E1F3058F100515700 /* Model */,
 				45009B601F2D96F300C889E9 /* AppDelegate.swift */,
 				45009B621F2D96F300C889E9 /* ViewController.swift */,
 				45009B641F2D96F300C889E9 /* Main.storyboard */,
@@ -62,6 +69,19 @@
 				45009B6C1F2D96F300C889E9 /* Info.plist */,
 			);
 			path = MJInke;
+			sourceTree = "<group>";
+		};
+		45025A0E1F3058F100515700 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45025A0F1F305A0900515700 /* ActInfo.swift */,
+				45025A131F305A0900515700 /* Creator.swift */,
+				45025A141F305A0900515700 /* Extra.swift */,
+				45025A111F305A0900515700 /* Label.swift */,
+				45025A121F305A0900515700 /* Live.swift */,
+				45025A101F305A0900515700 /* RootClass.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +116,7 @@
 				TargetAttributes = {
 					45009B5C1F2D96F300C889E9 = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -273,11 +294,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = N4ZC7WBUL7;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2J738B5H56;
 				INFOPLIST_FILE = MJInke/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Apple.MJInke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,11 +311,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = N4ZC7WBUL7;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2J738B5H56;
 				INFOPLIST_FILE = MJInke/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Apple.MJInke;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
