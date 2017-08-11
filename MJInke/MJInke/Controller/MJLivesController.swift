@@ -59,7 +59,7 @@ class MJLivesController: UITableViewController {
         
 //头像
         
-        //cell.imgPor.kf
+    
         
         
         return cell

@@ -7,9 +7,7 @@ target 'MJInke' do
 
   # Pods for MJInke
 
-
 #pod 'Just'
-
 #pod 'Kingfisher'
 
 end
