@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="600" id="g9y-ch-lmP">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="600" id="g9y-ch-lmP" customClass="MJLiveCell" customModule="MJInke" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="600"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g9y-ch-lmP" id="tyf-gD-Yk7">
@@ -50,8 +50,8 @@
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="99999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfv-uo-DW4">
-                                            <rect key="frame" x="196" y="62" width="91" height="27"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfv-uo-DW4">
+                                            <rect key="frame" x="225" y="65" width="62" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -72,9 +72,18 @@
                                         <constraint firstItem="6oS-TV-4sq" firstAttribute="trailing" secondItem="tyf-gD-Yk7" secondAttribute="trailingMargin" constant="8" id="5CZ-U0-aIb"/>
                                         <constraint firstItem="6oS-TV-4sq" firstAttribute="leading" secondItem="tyf-gD-Yk7" secondAttribute="leading" id="B04-TP-1P5"/>
                                         <constraint firstItem="6oS-TV-4sq" firstAttribute="top" secondItem="dfv-uo-DW4" secondAttribute="bottom" constant="8" symbolic="YES" id="MRX-tG-4IN"/>
+                                        <constraint firstItem="dfv-uo-DW4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tyf-gD-Yk7" secondAttribute="leading" constant="20" symbolic="YES" id="UHh-tg-nGd"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="6oS-TV-4sq" secondAttribute="bottom" constant="-8.5" id="cTP-aF-m4Z"/>
+                                        <constraint firstAttribute="trailing" secondItem="dfv-uo-DW4" secondAttribute="trailing" constant="88" id="dDr-rU-AdX"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ViewersLabel" destination="dfv-uo-DW4" id="dWn-GZ-IAQ"/>
+                                    <outlet property="adressLabel" destination="wlO-tM-DCZ" id="Koh-P9-WU4"/>
+                                    <outlet property="bigIamgeView" destination="6oS-TV-4sq" id="379-WR-Zm0"/>
+                                    <outlet property="imgPor" destination="FaD-ED-tIq" id="Uyt-n6-1tx"/>
+                                    <outlet property="nameLabel" destination="pMk-LJ-tzB" id="7rK-WZ-8M2"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
