@@ -7,8 +7,7 @@
 //
 
 import UIKit
-
-import Kingfisher
+import Just
 
 class MJLivesController: UITableViewController {
 
