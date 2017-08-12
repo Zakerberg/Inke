@@ -13,3 +13,6 @@ struct MJCell {
     var views = 0
     var url = ""
 }
+
+
+

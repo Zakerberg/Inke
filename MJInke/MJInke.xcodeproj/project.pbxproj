@@ -12,6 +12,12 @@
 		45009B661F2D96F300C889E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45009B641F2D96F300C889E9 /* Main.storyboard */; };
 		45009B681F2D96F300C889E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45009B671F2D96F300C889E9 /* Assets.xcassets */; };
 		45009B6B1F2D96F300C889E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45009B691F2D96F300C889E9 /* LaunchScreen.storyboard */; };
+		456DE88B1F3EA74A00DD9DA7 /* ActInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45025A0F1F305A0900515700 /* ActInfo.swift */; };
+		456DE88C1F3EA74A00DD9DA7 /* Creator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45025A131F305A0900515700 /* Creator.swift */; };
+		456DE88D1F3EA74A00DD9DA7 /* Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45025A141F305A0900515700 /* Extra.swift */; };
+		456DE88E1F3EA74A00DD9DA7 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45025A111F305A0900515700 /* Label.swift */; };
+		456DE88F1F3EA74A00DD9DA7 /* Live.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45025A121F305A0900515700 /* Live.swift */; };
+		456DE8901F3EA74A00DD9DA7 /* RootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45025A101F305A0900515700 /* RootClass.swift */; };
 		45E872491F3DD00900BED030 /* MJLiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E872481F3DD00900BED030 /* MJLiveCell.swift */; };
 		45EE42EB1F30B265005C1A9D /* MJCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE42EA1F30B265005C1A9D /* MJCell.swift */; };
 		45EE42EE1F30B491005C1A9D /* MJLivesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE42ED1F30B491005C1A9D /* MJLivesController.swift */; };
@@ -266,6 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456DE88B1F3EA74A00DD9DA7 /* ActInfo.swift in Sources */,
+				456DE88C1F3EA74A00DD9DA7 /* Creator.swift in Sources */,
+				456DE88D1F3EA74A00DD9DA7 /* Extra.swift in Sources */,
+				456DE88E1F3EA74A00DD9DA7 /* Label.swift in Sources */,
+				456DE88F1F3EA74A00DD9DA7 /* Live.swift in Sources */,
+				456DE8901F3EA74A00DD9DA7 /* RootClass.swift in Sources */,
 				45EE42EE1F30B491005C1A9D /* MJLivesController.swift in Sources */,
 				45009B631F2D96F300C889E9 /* ViewController.swift in Sources */,
 				45E872491F3DD00900BED030 /* MJLiveCell.swift in Sources */,
