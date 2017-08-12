@@ -20,28 +20,41 @@ class MJLivesController: UITableViewController {
         super.viewDidLoad()
         title = "Swift 映客直播"
         loadList()
+        
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl?.addTarget(self, action: #selector(loadList), for: .valueChanged)
+        
     }
     
-    func loadList()  {
+    @objc func loadList()  {
         
         Just.post(liveListUrl) { (r) in
             guard let json = r.json as? NSDictionary else {
                 return
             }
-            
             let lives = RootClass(fromDictionary: json).lives!
             
             self.list = lives.map({ (live) -> MJCell in
                 return MJCell(protrait: live.creator.portrait, nick: live.creator.nick, location: live.city, views: live.onlineUsers, url: live.streamAddr)
             })
+
+            
+            print(self.list)
+            
+            
             OperationQueue.main.addOperation {
-             
+                
                 self.tableView.reloadData()
+                self.refreshControl?.endRefreshing()
             }
         }
     }
     
-    // MARK: - Table view data source
+    // MARK: - TableView
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 600.0
+    }
     override func numberOfSections(in tableView: UITableView) -> Int {
         
         return 1
@@ -62,12 +75,13 @@ class MJLivesController: UITableViewController {
         cell.adressLabel.text = live.location
         cell.ViewersLabel.text = "\(live.views)"
         
-        let imageUrl = URL(string:"http://img.meelive.cn/" + live.protrait)
+        let imageUrl = URL(string:"http://img2.inke.cn/" + live.protrait)
         
         //头像
+        cell.imgPor.kf.setImage(with: imageUrl)
         
-        
-        
+        //
+        cell.bigIamgeView.kf.setImage(with: imageUrl)
         
         return cell
     }
