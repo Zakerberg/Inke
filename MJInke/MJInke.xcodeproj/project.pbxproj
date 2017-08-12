@@ -84,7 +84,6 @@
 				45EE42EC1F30B472005C1A9D /* Controller */,
 				45025A0E1F3058F100515700 /* Model */,
 				45009B601F2D96F300C889E9 /* AppDelegate.swift */,
-				45009B621F2D96F300C889E9 /* ViewController.swift */,
 				45009B641F2D96F300C889E9 /* Main.storyboard */,
 				45009B671F2D96F300C889E9 /* Assets.xcassets */,
 				45009B691F2D96F300C889E9 /* LaunchScreen.storyboard */,
@@ -127,6 +126,7 @@
 		45EE42EC1F30B472005C1A9D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				45009B621F2D96F300C889E9 /* ViewController.swift */,
 				45EE42ED1F30B491005C1A9D /* MJLivesController.swift */,
 			);
 			path = Controller;

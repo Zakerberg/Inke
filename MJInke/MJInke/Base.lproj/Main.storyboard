@@ -102,6 +102,7 @@
                                     <outlet property="bigIamgeView" destination="6oS-TV-4sq" id="379-WR-Zm0"/>
                                     <outlet property="imgPor" destination="FaD-ED-tIq" id="Uyt-n6-1tx"/>
                                     <outlet property="nameLabel" destination="pMk-LJ-tzB" id="7rK-WZ-8M2"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="DHI-Gm-FWK"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -111,13 +112,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="ga7-OB-01p"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" id="4Ua-GF-qbC"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9nN-eq-6Qf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="893.60000000000002" y="122.78860569715144"/>
+            <point key="canvasLocation" x="993" y="-111"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -136,6 +134,9 @@
                                     <constraint firstAttribute="height" constant="40" id="aKD-LG-CUx"/>
                                 </constraints>
                                 <state key="normal" image="goback"/>
+                                <connections>
+                                    <action selector="backBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tI9-bR-MQz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdO-ry-uUb">
                                 <rect key="frame" x="16" y="597" width="50" height="50"/>
@@ -144,6 +145,9 @@
                                     <constraint firstAttribute="height" constant="50" id="nre-re-gF1"/>
                                 </constraints>
                                 <state key="normal" image="gift"/>
+                                <connections>
+                                    <action selector="giftBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCB-jy-UMs"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bux-d1-cOC">
                                 <rect key="frame" x="150" y="-10.5" width="75" height="21"/>
@@ -157,6 +161,9 @@
                                     <constraint firstAttribute="width" constant="40" id="eVh-GD-qoH"/>
                                 </constraints>
                                 <state key="normal" image="点赞"/>
+                                <connections>
+                                    <action selector="loveBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CF0-21-eDp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -178,6 +185,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="backBtn" destination="wCn-PY-0p4" id="UjD-I4-HPI"/>
+                        <outlet property="backgroungView" destination="cZT-dw-OXb" id="vpq-yU-qSK"/>
+                        <outlet property="giftBtn" destination="zdO-ry-uUb" id="4Ds-wR-LAE"/>
+                        <outlet property="loveBtn" destination="H2D-GT-sfP" id="ShG-RU-WpN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
