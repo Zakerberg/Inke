@@ -33,10 +33,11 @@ class MJLivesController: UITableViewController {
             
             self.list = lives.map({ (live) -> MJCell in
                 return MJCell(protrait: live.creator.portrait, nick: live.creator.nick, location: live.city, views: live.onlineUsers, url: live.streamAddr)
-                
             })
-            
-            dump(self.list)
+            OperationQueue.main.addOperation {
+             
+                self.tableView.reloadData()
+            }
         }
     }
     
