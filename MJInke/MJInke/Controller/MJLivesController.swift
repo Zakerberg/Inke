@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Just
+
 
 class MJLivesController: UITableViewController {
 
